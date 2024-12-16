@@ -1,0 +1,144 @@
+
+@charset "utf-8";
+
+/*
+========================================================================
+:: LAYOUT FUNDAMENTALS :::::::::::::::::::::::::::::::::::::::::::::::::
+========================================================================
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-size: 16px;
+	min-height: 100%;
+}
+
+body {
+	width: 90%;
+	max-width: 1600px;
+	margin: auto;
+	transition: width 1s ease;
+}
+
+.siteheader,
+.sitemain,
+.sitefooter {
+	padding: 0.5em 1em;
+}
+
+.title .tag {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.4em;
+	padding: 0 0.2em;
+}
+
+.sitemain {
+	min-height: 60px;
+}
+
+.sitefooter {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.sitefooter > div {
+	max-width: 600px;
+}
+
+.stdcontent > * + * {
+	margin-top: 0.6rem;
+}
+
+.stdcontent ul,
+.stdcontent ol {
+	margin-top: 0;
+	padding-left: 1.5em;
+}
+
+@media (max-width: 700px) {
+	body {
+		width: 100%;
+	}
+}
+
+/*
+========================================================================
+:: THEME AND COLORS ::::::::::::::::::::::::::::::::::::::::::::::::::::
+========================================================================
+*/
+
+html {
+	font-family: "VT323", sans-serif;
+	color: #bdcea2;
+	background:
+		linear-gradient(
+			-120deg,
+			#65abb7ee,
+			#2a3655
+		),
+		url(https://source.unsplash.com/ALu2B7Vy7ao),
+	#ffffff66;
+	background-size: cover;
+}
+
+body {
+	backdrop-filter: blur(20px);
+}
+
+a {
+	color: white;
+}
+
+a.lowkey {
+	color: inherit;
+	text-decoration-color: #fff4;
+}
+
+.title > h1 {
+	color: white;
+	text-shadow: 0 0 10px #ffffff66;
+}
+
+.title .tag {
+	border: 1px solid yellow;
+	background: #a7a20047;
+	font-weight: normal;
+	border-radius: 2em;
+}
+
+.siteheader {
+  background: #ffffff11;
+}
+
+.sitemain, .sitefooter {
+	background: rgba(0,0,0, 0.5);
+	box-shadow: 3px 6px 12px rgba(0,0,0, 0.15);
+}
+
+.sitefooter {
+	opacity: 0.8;
+	background: rgba(0,0,0, 0.3);
+}
+
+/*
+========================================================================
+:: DOODADS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+========================================================================
+*/
+
+.disclaimer {
+	padding: 0.2em 0.6em;
+	background: #f902;
+	text-shadow: 1px 2px 3px #0003;
+}
+
+.wipnote {
+	color: orange;
+	text-shadow: 1px 2px 3px #0008;
+}
